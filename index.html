@@ -18,6 +18,9 @@
                 <li><a href="#Ubicacion">Ubicación</a></li>
             </ul>
         </nav>
+        <button id="BtnContraste">Cambiar Contraste</button>
+        <button id="IncrementoL">Aumentar Tamaño de Fuente</button>
+        <button id="DisminuirL">Disminuir Tamaño de Fuente</button>
     </header>
     <section id="quienes-somos">
         <h2>Quiénes Somos</h2>
@@ -35,17 +38,32 @@
         <h2>Vición</h2>
         <p>Transporte más inteligente con menos automóviles y mayor acceso. Transporte más seguro, económico y fiable; transporte que crea más oportunidades de trabajo y mayores ingresos para los conductores</p>
         <img src="Uber.jpg" alt="Uber" width="500" height="290">
-
+    
     </section>
-    <section id="Contacto">
+    <section id="cnt">
         <h2>Contacto</h2>
-        <form action="enviar.php" method="POST">
+        <form id="contactos">
             <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required><br>
+            <input type="text" id="nombre" name="nombre" required>
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br>
+            <input type="email" id="email" name="email" required>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" required>
+            <label for="genero">Género:</label>
+            <input type="radio" id="hombre" name="genero" value="hombre" required> Hombre
+            <input type="radio" id="mujer" name="genero" value="mujer" required> Mujer
+            <label for="preferencias">Preferencias:</label>
+            <input type="checkbox" id="newsletter" name="preferencias" value="newsletter"> Suscribirse al boletín
             <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" required></textarea><br>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            <label for="pais">País:</label>
+            <select id="pais" name="pais" required>
+                <option value="cl">Chile</option>
+                <option value="us">Estados Unidos</option>
+                <option value="mx">Mexico</option>
+            </select>
             <button type="submit">Enviar</button>
         </form>
     </section>
@@ -70,5 +88,6 @@
             <iframe src="https://www.google.com/maps/dir//Av.+Apoquindo+4501,+7580125+Las+Condes,+Regi%C3%B3n+Metropolitana/@-33.4138888,-70.6651952,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x9662cf41f784fe9f:0x2032bcfaa3d429f!2m2!1d-70.582794!2d-33.413916?entry=ttu" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </footer>
+    <script src="scripts.js"></script>
 </body>
 </html>
