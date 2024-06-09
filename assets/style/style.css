@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    background-color: #464545;
+    color: #333;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilos de contraste */
+.contraste body {
+    background-color: #222;
+    color: #fff;
+}
+
+.contraste header {
+    background-color: #111;
+    color: #fff;
+}
+
+.contraste section {
+    background-color: #444;
+    color: #fff;
+}
+
+.contraste footer {
+    background-color: #111;
+    color: #fff;
+}
+
+/* Otros estilos */
+h2 {
+    color: #007bff;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    
+}
+th, td {
+    padding: 12px;
+    text-align: left;
+    background-color: #f2f2f2;
+    color:black;
+    font-weight: bold;}
+
+.h1color{
+        color: black;
+        font-family:courier;
+ }
+.h2color{
+        color: rebeccapurple;
+        background-color: grey;
+        font-family:verdana;
+}

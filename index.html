@@ -5,76 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ubers</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <script src="./assets/js/firebase.js" type="module"></script>
+    <script src="./assets/js/scripts.js" type="module"></script>
 </head>
-<body>
+<body class="h1color">
     <header>
         <nav>
             <ul>
                 <li><a href="#Quienes-somos">Quiénes Somos</a></li>
                 <li><a href="#Mision">Misión</a></li>
-                <li><a href="#Vicion">Vición</a></li>
+                <li><a href="#Vicion">Visión</a></li>
                 <li><a href="#Contacto">Contacto</a></li>
                 <li><a href="#Ubicacion">Ubicación</a></li>
             </ul>
         </nav>
-        <button id="BtnContraste">Cambiar Contraste</button>
-        <button id="IncrementoL">Aumentar Tamaño de Fuente</button>
-        <button id="DisminuirL">Disminuir Tamaño de Fuente</button>
+        <button id="btncambioColor">Cambiar Contraste</button>
+
     </header>
-    <section id="quienes-somos">
+
+    <section id="Quienes-somos">
         <h2>Quiénes Somos</h2>
         <p>Movilizamos al mundo, eso es lo que mejor hacemos. Es nuestra esencia. Corre por nuestras venas. Es lo que nos saca de la cama cada mañana. Nos motiva a reinventar constantemente la forma de movilizarnos mejor. Para ti. Por todos los lugares a los que quieres ir. Por todas las cosas que quieres conseguir. Por todas las formas en las que quieres generar ganancias. En todo el mundo. En tiempo real. A la increíble velocidad del presente.</p>
         <img src="Mnos.jpg" alt="Uber" width="400" height="290">
-
     </section>
+
     <section id="Mision">
         <h2>Misión</h2>
         <p>Brindar transporte, para todos, en todas partes</p>
         <img src="Conductor.jpg" alt="Uber" width="400" height="290">
-
     </section>
-    <section id ="Vicion">
-        <h2>Vición</h2>
+
+    <section id="Vicion">
+        <h2>Visión</h2>
         <p>Transporte más inteligente con menos automóviles y mayor acceso. Transporte más seguro, económico y fiable; transporte que crea más oportunidades de trabajo y mayores ingresos para los conductores</p>
         <img src="Uber.jpg" alt="Uber" width="500" height="290">
-    
     </section>
+
     <section id="cnt">
         <h2>Contacto</h2>
         <form id="contactos">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="telefono">Teléfono:</label>
-            <input type="tel" id="telefono" name="telefono" required>
-            <label for="edad">Edad:</label>
-            <input type="number" id="edad" name="edad" required>
-            <label for="genero">Género:</label>
-            <input type="radio" id="hombre" name="genero" value="hombre" required> Hombre
-            <input type="radio" id="mujer" name="genero" value="mujer" required> Mujer
-            <label for="preferencias">Preferencias:</label>
-            <input type="checkbox" id="newsletter" name="preferencias" value="newsletter"> Suscribirse al boletín
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" required></textarea>
-            <label for="pais">País:</label>
-            <select id="pais" name="pais" required>
-                <option value="cl">Chile</option>
-                <option value="us">Estados Unidos</option>
-                <option value="mx">Mexico</option>
-            </select>
-            <button type="submit">Enviar</button>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" autocomplete="email" required>
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" id="telefono" name="telefono" autocomplete="tel" required>
+          <label for="edad">Edad:</label>
+          <input type="number" id="edad" name="edad" autocomplete="off" required>
+          <label for="genero_hombre">Género:</label>
+          <input type="radio" id="genero_hombre" name="genero" value="hombre" required> Hombre
+          <label for="genero_mujer">Género:</label>
+          <input type="radio" id="genero_mujer" name="genero" value="mujer" required> Mujer 
+          <label for="preferencias">Preferencias:</label>
+          <input type="checkbox" id="preferencias" name="preferencias" value="newsletter"> Suscribirse al boletín
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" autocomplete="off" required></textarea>
+          <label for="pais">País:</label>
+          <select id="pais" name="pais" autocomplete="country" required>
+              <option value="cl">Chile</option>
+              <option value="us">Estados Unidos</option>
+              <option value="mx">México</option>
+          </select>
+          <button type="submit" id="btnRegistrar">Enviar</button>
         </form>
     </section>
+
     <section id="Ubicacion">
         <h2>Ubicación</h2>
-        <p>tenemos muchas centrales duacuerdo a su comuna.</p>
+        <p>Tenemos muchas centrales de acuerdo a su comuna.</p>
         <img src="Mapa.png" alt="MapaU" usemap="#UberUbicacion" width="300" height="190">
         <map name="UberUbicacion">
             <area shape="rect" coords="1,1,300,450" href="https://www.google.com/maps/dir//Av.+Apoquindo+4501,+7580125+Las+Condes,+Regi%C3%B3n+Metropolitana/@-33.4138888,-70.6651952,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x9662cf41f784fe9f:0x2032bcfaa3d429f!2m2!1d-70.582794!2d-33.413916?entry=ttu" alt="https://www.google.com/maps/dir//Av.+Apoquindo+4501,+7580125+Las+Condes,+Regi%C3%B3n+Metropolitana/@-33.4138888,-70.6651952,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x9662cf41f784fe9f:0x2032bcfaa3d429f!2m2!1d-70.582794!2d-33.413916?entry=ttu">
         </map>
     </section>
+
     <footer>
         <div>
             <h3>Síguenos en redes sociales:</h3>
@@ -84,10 +89,43 @@
                 <li><a href="https://www.instagram.com/uber/?uclick_id=4f0762e0-a861-4a73-a0bc-a49f539940f0">Instagram</a></li>
             </ul>
         </div>
-        <div>
-            <iframe src="https://www.google.com/maps/dir//Av.+Apoquindo+4501,+7580125+Las+Condes,+Regi%C3%B3n+Metropolitana/@-33.4138888,-70.6651952,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x9662cf41f784fe9f:0x2032bcfaa3d429f!2m2!1d-70.582794!2d-33.413916?entry=ttu" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
     </footer>
-    <script src="scripts.js"></script>
+    <section id="cnt">
+        <table id="tPersonas">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Email</th>
+                    <th>Telefono</th>
+                    <th>Edad</th>
+                    <th>Mensaje</th>
+                    <th>Pais</th>
+
+
+                    <th>Actualizar</th>
+                    <th>Eliminar</th>
+
+                </tr>
+            </thead>
+            <tbody id="tbUbers"></tbody>
+
+
+    </section>
+    <section id="cnt">
+        <h1>Modificar</h1>
+        <input type="text" id="UPDnombre" placeholder="Nombre"><br>
+        <input type="text" id="UPDemail" placeholder="Email"><br>
+        <input type="number" id="UPDtelefono" placeholder="Telefono"><br>
+        <input type="number" id="UPDEdad" placeholder="Edad"><br>
+        <textarea id="UPDmensaje" name="mensaje"></textarea>
+        <select id="UPDpais" name="pais" autocomplete="country" required>
+            <option value="cl">Chile</option>
+            <option value="us">Estados Unidos</option>
+            <option value="mx">México</option>
+        </select>
+
+        <button id="btnActualizar">Actualizar</button>
+        <table id="tbUbers"></table>
+    </section>
 </body>
 </html>
